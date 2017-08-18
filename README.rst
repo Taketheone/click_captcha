@@ -107,6 +107,7 @@ urls.py 添加获得验证码的地址::
     admin_site.register(User)
 
 在 login.html 中加上验证码 form 字段::
+
     { % load click_captcha_tags %}
 
     { % block extrastyle %}
@@ -137,5 +138,5 @@ urls.py 添加获得验证码的地址::
 
 该项目有一系列文章的介绍其是如何开发的过程， 可以参考文章来定制自己的验证码
 
-`博客地址 <https://malongge.github.io>`_
+`博客地址 <https://malongge.github.io/blog/>`_
 

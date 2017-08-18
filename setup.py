@@ -36,11 +36,11 @@ setup(
     url='https://github.com/malongge/click_captcha.git',
     license='MIT',
     keywords='django captcha',
-    packages=find_packages(),
+    packages=find_packages(exclude=['tests', 'tests.*']),
     install_requires=requirements,
     tests_require=test_requirements,
     classifiers=[
-        'Development Status :: 1 - Alpha',
+        'Development Status :: 3 - Alpha',
         'Framework :: Django',
         'Intended Audience :: Developers',
         'Operating System :: OS Independent',
@@ -50,4 +50,6 @@ setup(
         'Topic :: Internet :: WWW/HTTP',
         'License :: OSI Approved :: MIT License',
     ],
+    zip_safe=False,
+    include_package_data=True,
 )
